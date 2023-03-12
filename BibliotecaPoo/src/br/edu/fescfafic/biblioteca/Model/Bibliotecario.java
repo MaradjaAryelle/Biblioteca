@@ -8,18 +8,18 @@ public class Bibliotecario extends Pessoa {
         this.CRB = CRB;
     }
 
-    public String getCoren() {
+    public String getCRB() {
         return CRB;
     }
 
-    public void setCoren(String coren) {
-        this.CRB = coren;
+    public void setCRB(String CRB) {
+        this.CRB = CRB;
     }
 
     @Override
     public String toString() {
         return "Bibliotecário{" +
-                "coren='" + CRB + '\'' +
+                "CRB='" + CRB + '\'' +
                 ", _cpf='" + _cpf + '\'' +
                 ", nome='" + nome + '\'' +
                 '}';

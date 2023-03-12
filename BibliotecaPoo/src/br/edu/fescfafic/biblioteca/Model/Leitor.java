@@ -10,7 +10,7 @@ public class Leitor {
     protected String _cpf;
     private String _rg;
     public int debito;
-
+//Se tiver debito o cadastro não será liberado, false
     public boolean cadastroLiberado;
 
     public Leitor(String nome, int idade, String cpf, String rg, boolean cadastroLiberado, int debito){
