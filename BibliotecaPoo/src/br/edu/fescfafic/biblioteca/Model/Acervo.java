@@ -8,6 +8,4 @@ Listas
 - Fisico(livros, revistas)
 */
 
-
-
 }
