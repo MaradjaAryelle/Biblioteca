@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class Leitor {
     public String nome;
     public int idade;
-    public ArrayList<String> historicoDeEmprestimos = new ArrayList<>();
-    public ArrayList<String> obrasEmPosse = new ArrayList<>();
+    public ArrayList<Emprestimo> historicoDeEmprestimos = new ArrayList<>();
+    public ArrayList<Emprestimo> obrasEmPosse = new ArrayList<>();
     protected String _cpf;
     private String _rg;
     public int debito;
@@ -22,12 +22,12 @@ public class Leitor {
         this.debito = debito;
     }
 
-    public void adicionarEmprestimo(String obra){
-        this.historicoDeEmprestimos.add(obra);
+    public void adicionarEmprestimo(Emprestimo emprestimo){
+        this.historicoDeEmprestimos.add(emprestimo);
     }
 
-    public void adicionarObra(String obra){
-        this.obrasEmPosse.add(obra);
+    public void adicionarObra(Emprestimo emprestimo){
+        this.obrasEmPosse.add(emprestimo);
     }
 
     public void setCadastroLiberado(boolean status){

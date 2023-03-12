@@ -12,8 +12,6 @@ public class Emprestimo {
     public Impressos nomeDaObra;
     public Impressos nomeDoAutor;
 
-    public ArrayList<String> historicoDeEmprestimos = new ArrayList<>();
-    public ArrayList<String> obrasEmPosse = new ArrayList<>();
 
     public Emprestimo(String dataSaida, String dataEntrada, Leitor nome, Impressos codigoIdentificador, Impressos nomeDaObra, Impressos nomeDoAutor){
         this.dataSaida = dataSaida;
@@ -23,14 +21,6 @@ public class Emprestimo {
         this.nomeDaObra = nomeDaObra;
         this.nomeDoAutor = nomeDoAutor;
             }
-
-    public void adicionarEmprestimo(String obra){
-        this.historicoDeEmprestimos.add(obra);
-    }
-
-    public void adicionarObra(String obra){
-        this.obrasEmPosse.add(obra);
-    }
 
 
 
